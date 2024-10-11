@@ -16,7 +16,7 @@
    ```
 2. 克隆仓库：
    ```bash
-   git clone https://github.com/yourusername/comfyui-simple-json-parser.git
+   git clone git@github.com:Q-Bug4/Comfyui-Simple-Json-Node.git
    ```
 3. 重启 ComfyUI 或重新加载自定义节点。
 
