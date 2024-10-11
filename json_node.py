@@ -11,15 +11,17 @@ class SimpleJSONParserNode:
             },
         }
 
-    RETURN_TYPES = ("STRING",)
+    RETURN_TYPES = ("STRING", "INT",)
+    RETURN_NAMES = ("parsed_data", "array_size",)
     FUNCTION = "parse_json"
     CATEGORY = "utils"
 
-    def parse_json(self, json_string: str, path: str) -> tuple[str]:
+    def parse_json(self, json_string: str, path: str) -> tuple[str, int]:
         try:
             data = json.loads(json_string)
             if not path:
-                return (json.dumps(data, indent=2),)
+                array_size = len(data) if isinstance(data, list) else -1
+                return json.dumps(data, indent=2), array_size
             
             keys = path.split('.')
             for key in keys:
@@ -31,14 +33,16 @@ class SimpleJSONParserNode:
                 else:
                     data = data[key]
             
+            array_size = len(data) if isinstance(data, list) else -1
+            
             if isinstance(data, (dict, list)):
-                return (json.dumps(data, indent=2),)
+                return json.dumps(data, indent=2), array_size
             else:
-                return (str(data),)
+                return str(data), array_size
         except json.JSONDecodeError:
-            raise ValueError("Invalid JSON string",)
+            raise ValueError("Invalid JSON string")
         except (KeyError, IndexError, TypeError):
-            raise ValueError("Invalid path or key not found",)
+            raise ValueError("Invalid path or key not found")
 
     @classmethod
     def IS_CHANGED(cls, **kwargs):
