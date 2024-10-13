@@ -9,6 +9,6 @@ Repository = "https://github.com/Q-Bug4/Comfyui-Simple-Json-Node"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "qbug"
 DisplayName = "Comfyui-Simple-Json-Node"
 Icon = ""
