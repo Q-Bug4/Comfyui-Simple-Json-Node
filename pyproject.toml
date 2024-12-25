@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-simple-json-node"
 description = "A custom node for ComfyUI to parse and extract data from JSON strings."
-version = "1.0.0"
+version = "1.1.0"
 license = {file = "LICENSE"}
 
 [project.urls]
