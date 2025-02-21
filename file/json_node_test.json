@@ -1,0 +1,1948 @@
+{
+  "last_node_id": 60,
+  "last_link_id": 29,
+  "nodes": [
+    {
+      "id": 18,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2332.37060546875,
+        2154.990478515625
+      ],
+      "size": [
+        309.6000061035156,
+        260.8000183105469
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"name\": \"Alice\",\n  \"scores\": [\n    85,\n    90,\n    92\n  ],\n  \"name2\": \"Bob\",\n  \"scores2\": [\n    78,\n    88,\n    94\n  ]\n}"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "JSONKeyCheckerNode",
+      "pos": [
+        -244.62130737304688,
+        1554.603271484375
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "exists",
+          "type": "BOOLEAN",
+          "links": [
+            12
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "value",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONKeyCheckerNode"
+      },
+      "widgets_values": [
+        "\n    {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    }\n",
+        "name"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "JSONGeneratorNode",
+      "pos": [
+        -2794.389404296875,
+        1539.045654296875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "generated_json",
+          "type": "STRING",
+          "links": [
+            14
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONGeneratorNode"
+      },
+      "widgets_values": [
+        "name:Alice\nscores:[1,2,3]",
+        false
+      ]
+    },
+    {
+      "id": 24,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2373.7265625,
+        1537.2274169921875
+      ],
+      "size": [
+        349.6000061035156,
+        135.99996948242188
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"name\": \"Alice\",\n  \"scores\": [\n    1,\n    2,\n    3\n  ]\n}"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1484.151611328125,
+        1627.2208251953125
+      ],
+      "size": [
+        315,
+        76
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\"name\": \"Bob\", \"scores\": [78, 88, 94]}"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1482.879638671875,
+        1505.29296875
+      ],
+      "size": [
+        315,
+        76
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Bob"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "Int2String",
+      "pos": [
+        -1557.0635986328125,
+        1767.21923828125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Int",
+          "type": "INT",
+          "link": 21,
+          "widget": {
+            "name": "Int"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int2String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1422.6156005859375,
+        1750.772216796875
+      ],
+      "size": [
+        253.04798889160156,
+        76
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1"
+      ]
+    },
+    {
+      "id": 39,
+      "type": "Note",
+      "pos": [
+        -2802.4306640625,
+        1333.67626953125
+      ],
+      "size": [
+        420.4574890136719,
+        151.45664978027344
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONGeneratorNode)\nThis Node generates JSON data from key-value pair text input.\nInput:\n- key_value_pairs: String of key-value pairs (one per line)\n- is_array: Boolean to generate array instead of object\nOutput:\n- generated_json: The resulting JSON string\n## Exception\n- ValueError if invalid key-value format or JSON generation fails\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 40,
+      "type": "Note",
+      "pos": [
+        -1970.235107421875,
+        1333.774169921875
+      ],
+      "size": [
+        468.16455078125,
+        230.2126007080078
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONObjectIteratorNode)\nThis Node iterates through key-value pairs in a JSON object.\nInput:\n- json_input: JSON object string\n- index: Starting index\n- mode: fixed/incr/decr iteration mode\nOutput:\n- key: Current key\n- value: Current value\n- current_index: Current position\n- total_items: Total pairs\n## Exception\n- ValueError if input is not valid JSON object\n## Multi Workflow\nIf you use this node in severval workflows at the same time, they will use the same index. Like, workflow1 get index 1, then run workflow2, workflow2 will get index 2 not index 1(because index 1 is got by workflow1)"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 33,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -602.1322021484375,
+        1530.8134765625
+      ],
+      "size": [
+        315,
+        76
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\"name\": \"Bob\", \"scores\": [78, 88, 94]}"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "JSONArrayIteratorNode",
+      "pos": [
+        -1095.6802978515625,
+        1636.93896484375
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "item",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "current_index",
+          "type": "INT",
+          "links": [
+            25
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "total_items",
+          "type": "INT",
+          "links": [
+            26
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONArrayIteratorNode"
+      },
+      "widgets_values": [
+        "[\n    {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    {\n      \"name\": \"Bob\",\n      \"scores\": [78, 88, 94]\n    }\n  ]",
+        1,
+        "incr"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "Int2String",
+      "pos": [
+        -658.48291015625,
+        1694.48291015625
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Int",
+          "type": "INT",
+          "link": 25,
+          "widget": {
+            "name": "Int"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            20
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int2String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -499.72479248046875,
+        1653.894775390625
+      ],
+      "size": [
+        210,
+        76
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 20,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Int2String",
+      "pos": [
+        -692.99072265625,
+        1771.237060546875
+      ],
+      "size": [
+        210,
+        34
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Int",
+          "type": "INT",
+          "link": 26,
+          "widget": {
+            "name": "Int"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int2String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -559.3676147460938,
+        1772.990478515625
+      ],
+      "size": [
+        210,
+        76
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 27,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "2"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "Note",
+      "pos": [
+        -1096.0665283203125,
+        1337.409423828125
+      ],
+      "size": [
+        439.03936767578125,
+        252.74586486816406
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONArrayIteratorNode) \nThis Node iterates through elements in a JSON array.\nInput:\n- json_input: JSON array string\n- index: Starting index\n- mode: fixed/incr/decr iteration mode\nOutput:\n- item: Current array element\n- current_index: Current position\n- total_items: Array length\n## Exception\n- ValueError if input is not valid JSON array\n## Multi Workflow\nIf you use this node in severval workflows at the same time, they will use the same index. Like, workflow1 get index 1, then run workflow2, workflow2 will get index 2 not index 1(because index 1 is got by workflow1)\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4,
+      "type": "Int2String",
+      "pos": [
+        -3197.419189453125,
+        1786.5560302734375
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Int",
+          "type": "INT",
+          "link": 2,
+          "widget": {
+            "name": "Int"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int2String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -3078.80615234375,
+        1768.4862060546875
+      ],
+      "size": [
+        210,
+        81.85639953613281
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "-1"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -3178.107421875,
+        1566.5552978515625
+      ],
+      "size": [
+        309.2377014160156,
+        159.9598388671875
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"name\": \"Bob\",\n  \"ext\": \"nothing here\",\n  \"scores\": [\n    78,\n    88,\n    94\n  ]\n}"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -3192.020751953125,
+        1905.4822998046875
+      ],
+      "size": [
+        309.2377014160156,
+        159.9598388671875
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 28,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Bob"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "JSONParserNode",
+      "pos": [
+        -3622.0205078125,
+        1905.4822998046875
+      ],
+      "size": [
+        403.5138854980469,
+        276.1332092285156
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "parsed_data",
+          "type": "STRING",
+          "links": [
+            28
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "array_size",
+          "type": "INT",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONParserNode"
+      },
+      "widgets_values": [
+        "[\n    {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    {\n      \"name\": \"Bob\",\n\"ext\": \"nothing here\",\n      \"scores\": [78, 88, 94]\n    }\n ]",
+        "1.name"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "JSONParserNode",
+      "pos": [
+        -3620.50537109375,
+        1566.191162109375
+      ],
+      "size": [
+        403.5138854980469,
+        276.1332092285156
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "parsed_data",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "array_size",
+          "type": "INT",
+          "links": [
+            2
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONParserNode"
+      },
+      "widgets_values": [
+        "[\n    {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    {\n      \"name\": \"Bob\",\n\"ext\": \"nothing here\",\n      \"scores\": [78, 88, 94]\n    }\n  ]",
+        "1"
+      ]
+    },
+    {
+      "id": 52,
+      "type": "Note",
+      "pos": [
+        -3203.802001953125,
+        1338.7130126953125
+      ],
+      "size": [
+        340.18243408203125,
+        169.6743927001953
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Path Usage",
+      "properties": {},
+      "widgets_values": [
+        "1. Array Index: You can use index to find element in array. Like the first example, using index 1 to get the second json object(Bob), while index 0 get the first json object(Alice).\n2. Object Key: You can use key to find value of the json object. Like, we use `1.name` to get the `name` field of the second json object.\n3. Empty: Just return the original json string."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 44,
+      "type": "Note",
+      "pos": [
+        -3614.788818359375,
+        1336.400390625
+      ],
+      "size": [
+        390.9947509765625,
+        176.9230194091797
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (SimpleJSONParserNode)\nThis Node parses JSON and can extract nested values via path.\nInput:\n- json_string: JSON input to parse\n- path: Dot notation path to extract (optional)\nOutput:\n- parsed_data: Extracted/full JSON data\n- array_size: Length if array, -1 otherwise\n## Exception\n- ValueError for invalid JSON or path"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 8,
+      "type": "JSONMergeNode",
+      "pos": [
+        -2808.18701171875,
+        2139.40087890625
+      ],
+      "size": [
+        423.9847717285156,
+        356.4274597167969
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "merged_json",
+          "type": "STRING",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONMergeNode"
+      },
+      "widgets_values": [
+        "\n    {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    }\n",
+        "                         {\n      \"name2\": \"Bob\",\n      \"scores2\": [78, 88, 94]\n}",
+        "concat"
+      ]
+    },
+    {
+      "id": 53,
+      "type": "Note",
+      "pos": [
+        -2791.831298828125,
+        1897.48291015625
+      ],
+      "size": [
+        385.1839904785156,
+        187.55239868164062
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONMergeNode)\nThis Node merges two JSON inputs with configurable strategy.\nInput:\n- json_input_1: First JSON input\n- json_input_2: Second JSON input\n- merge_strategy: override/preserve/concat\nOutput:\n- merged_json: Combined JSON result\n## Exception\n- ValueError if inputs are invalid or incompatible types\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "JSONObjectIteratorNode",
+      "pos": [
+        -1969.0955810546875,
+        1617.1732177734375
+      ],
+      "size": [
+        402.3847961425781,
+        266.0274963378906
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "key",
+          "type": "STRING",
+          "links": [
+            16
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "value",
+          "type": "STRING",
+          "links": [
+            17
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "current_index",
+          "type": "INT",
+          "links": [
+            21
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "total_items",
+          "type": "INT",
+          "links": [],
+          "slot_index": 3,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONObjectIteratorNode"
+      },
+      "widgets_values": [
+        "{\n    \"Ali\": {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    \"Bob\": {\n      \"name\": \"Bob\",\n      \"scores\": [78, 88, 94]\n    }\n}",
+        0,
+        "incr"
+      ]
+    },
+    {
+      "id": 56,
+      "type": "JSONParserNode",
+      "pos": [
+        -1938.015380859375,
+        2030.1947021484375
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "parsed_data",
+          "type": "STRING",
+          "links": [
+            29
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "array_size",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONParserNode"
+      },
+      "widgets_values": [
+        "{\n    \"Ali\": {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    \"Bob\": {\n      \"name\": \"Bob\",\n      \"scores\": [78, 88, 94]\n    }\n}",
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "JSONLengthNode",
+      "pos": [
+        -1933.8482666015625,
+        2272.59130859375
+      ],
+      "size": [
+        222.4000244140625,
+        34
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input",
+          "type": "STRING",
+          "link": 29,
+          "widget": {
+            "name": "json_input"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "length",
+          "type": "INT",
+          "links": [
+            5
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONLengthNode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "Int2String",
+      "pos": [
+        -1689.20068359375,
+        2296.055419921875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Int",
+          "type": "INT",
+          "link": 5,
+          "widget": {
+            "name": "Int"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int2String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1519.1383056640625,
+        2232.059326171875
+      ],
+      "size": [
+        315,
+        76
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "2"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "Note",
+      "pos": [
+        -1514.8914794921875,
+        2034.6947021484375
+      ],
+      "size": [
+        333.2611999511719,
+        159.20738220214844
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "JSONLengthNode",
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONLengthNode)\nThis Node returns the length of JSON arrays/objects.\nInput:\n- json_input: JSON string\nOutput:\n- length: Number of elements/keys\n## Exception\n- ValueError if invalid JSON input\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 22,
+      "type": "ShowText|pysssss",
+      "pos": [
+        176.01351928710938,
+        1678.3717041015625
+      ],
+      "size": [
+        210,
+        76
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 11,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Alice"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "Boolean To Text",
+      "pos": [
+        179.66600036621094,
+        1496.31591796875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "link": 12,
+          "widget": {
+            "name": "boolean"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Boolean To Text"
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 21,
+      "type": "ShowText|pysssss",
+      "pos": [
+        180.16639709472656,
+        1551.7742919921875
+      ],
+      "size": [
+        210,
+        76
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "True"
+      ]
+    },
+    {
+      "id": 57,
+      "type": "Note",
+      "pos": [
+        -235.63531494140625,
+        1341.2774658203125
+      ],
+      "size": [
+        389.482666015625,
+        162.2439422607422
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "JSONKeyCheckerNode",
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONKeyCheckerNode)\nThis Node checks for key existence and returns its value.\nInput:\n- json_input: JSON object string\n- key: Key to check (supports dot notation)\nOutput:\n- exists: Boolean for key existence\n- value: Value if key exists\n## Exception\n- ValueError if invalid JSON input\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 9,
+      "type": "JSONModifierNode",
+      "pos": [
+        -1092.6138916015625,
+        2173.87060546875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "modified_json",
+          "type": "STRING",
+          "links": [
+            24
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JSONModifierNode"
+      },
+      "widgets_values": [
+        "{\n    \"Ali\": {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    \"Bob\": {\n      \"name\": \"Bob\",\n      \"scores\": [78, 88, 94]\n    }\n}",
+        "Ali",
+        "{\n\"name\": 1,\n\"scores\": \"alala\"\n}"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -665.122314453125,
+        2157.711669921875
+      ],
+      "size": [
+        476.9848937988281,
+        218.82748413085938
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 24,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"Ali\": {\n    \"name\": 1,\n    \"scores\": \"alala\"\n  },\n  \"Bob\": {\n    \"name\": \"Bob\",\n    \"scores\": [\n      78,\n      88,\n      94\n    ]\n  }\n}"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "Note",
+      "pos": [
+        -1090.9422607421875,
+        1963.2667236328125
+      ],
+      "size": [
+        344.31951904296875,
+        167.91539001464844
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "JSONModifierNode",
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (JSONModifierNode)\nThis Node modifies JSON values at specified paths.\nInput:\n- json_input: JSON to modify\n- path: Path to modification point\n- new_value: New value to insert\nOutput:\n- modified_json: Updated JSON\n## Exception\n- ValueError if invalid JSON or path\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 25,
+      "type": "ShowText|pysssss",
+      "pos": [
+        278.256591796875,
+        2137.476806640625
+      ],
+      "size": [
+        315,
+        76
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 15,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Bob"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "RandomJSONValueNode",
+      "pos": [
+        -138.20477294921875,
+        2007.67138671875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "random_value",
+          "type": "STRING",
+          "links": [
+            15
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RandomJSONValueNode"
+      },
+      "widgets_values": [
+        "{\n    \"Ali\": {\n      \"name\": \"Alice\",\n      \"scores\": [85, 90, 92]\n    },\n    \"Bob\": {\n      \"name\": \"Bob\",\n      \"scores\": [78, 88, 94]\n    }\n}",
+        -1
+      ]
+    },
+    {
+      "id": 59,
+      "type": "Note",
+      "pos": [
+        277.37908935546875,
+        1953.03076171875
+      ],
+      "size": [
+        349.2901306152344,
+        139.67298889160156
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "RandomJSONValueNode",
+      "properties": {},
+      "widgets_values": [
+        "## Node Description (RandomJSONValueNode)\nThis Node returns random values from JSON structures.\nInput:\n- json_input: JSON to traverse\n- max_depth: Maximum nesting depth (-1 for unlimited)\nOutput:\n- random_value: Randomly selected value\n## Exception\n- ValueError if invalid JSON input"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 60,
+      "type": "Note",
+      "pos": [
+        -3630.80615234375,
+        1094.996826171875
+      ],
+      "size": [
+        788.2379150390625,
+        145.70433044433594
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Hey there! 👋 I've built a set of handy JSON tools to make your life easier when working with JSON data. Whether you need to parse, modify, merge, or transform JSON structures, our nodes will help you get the job done without the hassle!\n\nYou can run this workflow to check the result of each node to figure out how to use. Have fun😸\n\nGithub Repo url: https://github.com/Q-Bug4/Comfyui-Simple-Json-Node\nIssue url: https://github.com/Q-Bug4/Comfyui-Simple-Json-Node/issues"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      1,
+      1,
+      4,
+      0,
+      "INT"
+    ],
+    [
+      3,
+      4,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      7,
+      0,
+      16,
+      0,
+      "INT"
+    ],
+    [
+      6,
+      16,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      8,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      12,
+      1,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      12,
+      12,
+      0,
+      23,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      13,
+      23,
+      0,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      10,
+      0,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      15,
+      0,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      16,
+      14,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      17,
+      14,
+      1,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      29,
+      0,
+      30,
+      0,
+      "STRING"
+    ],
+    [
+      21,
+      14,
+      2,
+      31,
+      0,
+      "INT"
+    ],
+    [
+      22,
+      31,
+      0,
+      32,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      13,
+      0,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      9,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      25,
+      13,
+      1,
+      29,
+      0,
+      "INT"
+    ],
+    [
+      26,
+      13,
+      2,
+      42,
+      0,
+      "INT"
+    ],
+    [
+      27,
+      42,
+      0,
+      43,
+      0,
+      "STRING"
+    ],
+    [
+      28,
+      47,
+      0,
+      48,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      56,
+      0,
+      7,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "JSONGeneratorNode",
+      "bounding": [
+        -2812.4306640625,
+        1260.0762939453125,
+        798.3035888671875,
+        488.9696350097656
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "JSONObjectIteratorNode",
+      "bounding": [
+        -1980.235107421875,
+        1260.174072265625,
+        840.7557983398438,
+        657.0262451171875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "JSONArrayIteratorNode",
+      "bounding": [
+        -1106.0665283203125,
+        1263.8094482421875,
+        828.933837890625,
+        583.1295166015625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "SimpleJSONParserNode",
+      "bounding": [
+        -3632.0205078125,
+        1262.8004150390625,
+        778.401123046875,
+        928.8150024414062
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "JSONMergeNode",
+      "bounding": [
+        -2818.18701171875,
+        1823.8824462890625,
+        805.4154052734375,
+        681.9451293945312
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "JSONLengthNode",
+      "bounding": [
+        -1948.015380859375,
+        1956.594482421875,
+        776.3853759765625,
+        361.46453857421875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "JSONKeyCheckerNode",
+      "bounding": [
+        -254.62130737304688,
+        1267.677490234375,
+        654.7877197265625,
+        496.9258117675781
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "JSONModifierNode",
+      "bounding": [
+        -1102.6138916015625,
+        1889.66796875,
+        924.475830078125,
+        496.8734436035156
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "RandomJSONValueNode",
+      "bounding": [
+        -148.20474243164062,
+        1879.4306640625,
+        784.8739013671875,
+        344.0472717285156
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.28531167061100043,
+      "offset": [
+        3996.54180442534,
+        -629.0581400087125
+      ]
+    },
+    "node_versions": {
+      "ComfyUI-Chibi-Nodes": "290ccef2a8c1bc3917e1c00dbe5c206b66fb8ded",
+      "was-node-suite-comfyui": "056badacda52e88d29d6a65f9509cd3115ace0f2"
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
